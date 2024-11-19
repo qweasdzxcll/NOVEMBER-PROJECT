@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/css/all_attr.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__container" id="container">
+            <div class="header">
+                <div class="header__container">
+                    <div class="header__elems">
+                        <div class="header__item header__title">
+                            <p>All Attractions</p>
+                        </div>
+                        <div class="header__item header__item2">
+                            <a href="venezia.html">Venice</a>
+                        </div>
+                        <div class="header__item header__item3">
+                            <a href="warsaw.html">Warsaw</a>
+                        </div>
+                        <div class="header__search">
+                            <input type="text" id="input" class="input" placeholder="Search..">
+                            <button id="submit"  onclick="search()">Submit</button>
+                        </div>
+                        <div class="header__filters">
+                            <div class="header__row header__row1">
+                                <label for="Cathedral">Cathedrals</label>
+                                <input type="radio" id="Cathedral" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="Palace">Palaces</label>
+                                <input type="radio" id="Palace" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="Museum">Museums</label>
+                                <input type="radio" id="Museum" class="radio" name="radio" onclick="filtration(this.id)">
+                            </div>
+                            <div class="header__row header__row2">
+                                <label for="All">All</label>
+                                <input type="radio" id="All" class="radio" name="radio" onclick="render()">
+                            </div>
+                        </div
+                    </div>
+                </div>
+            </div>
+            <div id="cards">
+
+            </div>
+            <div class="main__pagination">
+                <div class="main__pag main__pag1">
+                    <img src="./assets/img/5937625_arrow_down_left_next_right_icon.png" alt="" onclick="prev()">                       
+                </div>
+                <div class="main__pag main__pag2">
+                    <p>...</p>                    
+                </div>
+                <div class="main__pag main__pag3" >
+                    <img src="./assets/img/5937605_arrow_down_left_next_right_icon.png" alt="" onclick="next()">                   
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/open_new_html.js"></script>
+</body>
+</html>

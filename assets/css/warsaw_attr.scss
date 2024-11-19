@@ -316,6 +316,9 @@ li {
             height: 100%;
         }
     }
+    &__item26 {
+        border-color: #D4A672;
+    }
     &__text3 {
         background-color: #CBC8AA;
         text-align: center;
@@ -450,9 +453,7 @@ li {
         }
     }
     &__item17 {
-        @media (max-width: 426px) {
-            
-        }
+        border-color: #FA6C6C;
     }
     &__title4 {
         position: relative;

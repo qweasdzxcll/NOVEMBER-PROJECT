@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__container {
+  max-width: 130vh;
+  width: 100%;
+  min-height: 90vh;
+  margin: 5vh auto;
+  background-color: #e6e6e6;
+  border-radius: 30px;
+}
+.main .header__container {
+  margin: 10px 30px 30px 30px;
+}
+@media (max-width: 426px) {
+  .main .header__container {
+    display: none;
+  }
+}
+.main .header__container input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  height: 30px;
+  border: 3px solid black;
+}
+.main .header__container button {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 20px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(107, 107, 107);
+  border: 3px solid black;
+}
+.main .header__search {
+  padding-top: 8px;
+  float: right;
+}
+.main .header__elems {
+  padding-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.main .header__item {
+  font-family: Protest Strike;
+  font-size: 24px;
+}
+.main .header__title {
+  color: rgba(107, 107, 107, 0.356);
+}
+.main .header__filters {
+  display: block;
+  gap: 10px;
+  font-family: Protest Strike;
+}
+.main .header__filters label {
+  margin-top: 5px;
+}
+.main .header__filters input {
+  position: relative;
+  right: 8px;
+}
+.main .header__row {
+  display: flex;
+  gap: 10px;
+}
+.main .header__title, .main .header__item2, .main .header__item3 {
+  margin-top: 6px;
+}
+.main__img {
+  max-width: 25vh;
+  width: 100%;
+  height: 16vh;
+}
+.main__img :hover {
+  transform: scale(0.9);
+}
+.main__img img {
+  max-width: 25vh;
+  width: 100%;
+  height: 16vh;
+}
+.main__subtitle {
+  font-family: Protest Strike;
+  margin-bottom: 2px;
+}
+.main__card {
+  cursor: pointer;
+}
+.main__pagination {
+  display: flex;
+  margin-left: 57vh;
+  margin-top: 3vh;
+  gap: 20px;
+  font-size: 30px;
+}
+.main__pagination img {
+  width: 30px;
+  height: 30px;
+}
+.main__pag1, .main__pag3 {
+  cursor: pointer;
+}
+.main #cards {
+  margin-top: 8vh;
+  margin-left: 80px;
+  gap: 40px;
+  display: flex;
+  max-width: 180vh;
+  flex-wrap: wrap;
+}
+.main #cards2 {
+  margin-left: 80px;
+  gap: 40px;
+  display: none;
+  max-width: 180vh;
+  flex-wrap: wrap;
+}

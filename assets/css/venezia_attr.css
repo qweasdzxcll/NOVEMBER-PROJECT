@@ -133,6 +133,11 @@ li {
   font-family: Protest Strike;
   width: 400px;
 }
+@media (max-width: 426px) {
+  .main__title p {
+    width: 400px;
+  }
+}
 .main__row {
   display: flex;
   max-width: 813px;
@@ -550,6 +555,12 @@ li {
     position: relative;
     top: -1120px;
     right: 1000px;
+  }
+}
+@media (max-width: 426px) {
+  .main__title5 p {
+    position: relative;
+    right: 334px;
   }
 }
 .main__item16 {

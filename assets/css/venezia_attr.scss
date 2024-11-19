@@ -110,6 +110,11 @@ li {
         color: white;
         font-family: Protest Strike;
         width: 400px;
+        p {
+            @media (max-width: 426px) {
+                width: 400px;
+            }
+        }
     }
     &__row {
         display: flex;
@@ -485,6 +490,12 @@ li {
             top: -1120px;
             right: 1000px;
         }
+        p {
+            @media (max-width: 426px) {
+                position: relative;
+                right: 334px;
+            }
+            }
     }
     &__item16 {
         position: relative;

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.main {
+    &__container {
+        max-width: 130vh;
+        width: 100%;
+        min-height: 90vh;
+        margin: 5vh auto;
+        background-color: #e6e6e6;
+        border-radius: 30px;
+    }
+    .header {
+        &__container {
+            margin: 10px 30px 30px 30px;
+            @media (max-width: 426px) {
+                display: none;
+            }
+            input {
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                padding: 5px;
+                height: 30px;
+                border: 3px solid black;
+            }
+            button {
+                border: none;
+                padding: 5px;
+                border-radius: 10px;
+                margin-left: 20px;
+                height: 30px;
+                width: 100px;
+                cursor: pointer;
+                background-color: white;
+                color: rgb(107, 107, 107);
+                border: 3px solid black;
+            }
+        }
+        &__search {
+            padding-top: 8px;
+            float: right;
+
+        }
+        &__elems {
+            padding-top: 30px;
+            display: flex;
+            gap: 30px;
+        }
+        &__item {
+            font-family: Protest Strike;
+            font-size: 24px;
+        }
+        &__title {
+            color: rgba(107, 107, 107, 0.356)
+        }
+        &__filters {
+            display: block;
+            gap: 10px;
+            font-family: Protest Strike;
+            label {
+                margin-top: 5px;
+            }
+            input {
+                position: relative;
+                right: 8px;
+            }
+        }
+        &__row {
+            display: flex;
+            gap: 10px;
+        }
+        &__title, &__item2, &__item3 {
+            margin-top: 6px;
+        }
+    }
+    &__img {
+        max-width: 25vh;
+        width: 100%;
+        height: 16vh;
+        :hover {
+            transform: scale(0.9);
+        }
+        img {
+            max-width: 25vh;
+            width: 100%;
+            height: 16vh;
+        }
+    }
+    &__subtitle {
+        font-family: Protest Strike;
+        margin-bottom: 2px;
+    }
+    &__card {
+        cursor: pointer;
+    }
+    &__pagination {
+        display: flex;
+        margin-left: 57vh;
+        margin-top: 3vh;
+        gap: 20px;
+        font-size: 30px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__pag1, &__pag3 {
+        cursor: pointer;
+    }
+    #cards {
+        margin-top: 8vh;
+        margin-left: 80px;
+        gap: 40px;
+        display: flex;
+        max-width: 180vh; 
+        flex-wrap: wrap; 
+    }
+    #cards2 {
+        margin-left: 80px;
+        gap: 40px;
+        display: none;
+        max-width: 180vh; 
+        flex-wrap: wrap; 
+    }
+}

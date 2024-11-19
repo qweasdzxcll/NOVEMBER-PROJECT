@@ -20,7 +20,7 @@ li {
 }
 .main__line {
   transition: all 1s;
-  width: 5760px;
+  width: 3840px;
   height: 952px;
   display: flex;
   position: relative;
