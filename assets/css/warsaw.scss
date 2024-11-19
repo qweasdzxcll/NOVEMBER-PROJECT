@@ -25,7 +25,7 @@ li {
             width: 1900px;
             height: 952px;
             @media (max-width: 426px) {
-                width: 100%;
+                width: 425px;
                 height: 100%;
             }
         }
@@ -42,8 +42,7 @@ li {
         @media (max-width: 426px) {
             width: 300px;
             font-size: 40px;
-            left: 100px;
-            bottom: 515px;
+            left: 80px;
         }
     }
     &__row {
@@ -67,7 +66,7 @@ li {
     &__row-2 {
         bottom: 40px;
         @media (max-width: 426px) {
-            top: 1300px;
+            top: 1150px;
         }
     }
     &__card {
@@ -84,8 +83,10 @@ li {
         margin-bottom: 20px;
         @media (max-width: 426px) {
             width: 134%;
-             position: relative;
+            position: relative;
             right: 53px;
+            font-size: 20px;
+            height: 180px;
         }
         p {
             padding: 10px;
@@ -101,6 +102,9 @@ li {
             width: 1830px;
             margin: 10px 30px;
             display: flex;
+            @media(max-width: 426px) {
+                width: 300px;
+            }
         }
         &__title {
             @media (max-width: 426px) {
@@ -123,6 +127,7 @@ li {
         }
         &__item-4 {
             color: rgba(255, 255, 255, 0.288);
+            text-shadow: none;
         }
         &__item {
             font-family: Protest Strike;
@@ -135,7 +140,8 @@ li {
             display: flex;
             align-items: center;
             font-size: 40px;
-            gap: 70px;
+            gap: 65px;
+            text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
         }
         &__burger-contact {
             @media (max-width: 426px) {
@@ -160,14 +166,14 @@ li {
         }
         &__burger {
             display: none;
-            background-color: grey;
+            background-color: rgba(128, 128, 128, 0.719);
             border-radius: 30px;
             color: white;
             font-family: Protest Strike;
             position: absolute;
             z-index: 12388750;
             // margin-left: 1450px;
-            top: 50px;
+            top: 30px;
         }
         &__burger-cont {
             text-align: center;
@@ -218,7 +224,7 @@ li {
     margin-top: 30px;
     @media (max-width: 426px) {
         margin-left: 0;
-        margin-top: 1900px;
+        margin-top: 1700px;
     }
     p {
         font-size: 40px;
@@ -230,9 +236,9 @@ li {
         border-radius: 50px;
         @media (max-width: 426px) {
             border-radius: 0;
-            max-width: 425px;
-            width: 425px;
-            height: 425px;
+            max-width: 420px;
+            width: 100%;
+            height: 420px;
         }
     }
 }

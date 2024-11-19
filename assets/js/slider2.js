@@ -19,6 +19,7 @@ function prevSlide() {
     }
     sliderLine.style.left = -offset + 'px'
 }
-document.querySelector('.btns__btn-next').addEventListener('click', nextSlide)
 
-document.querySelector('.btns__btn-prev').addEventListener('click', prevSlide)
+document.querySelector('.btns__btn-next').onclick = nextSlide
+
+document.querySelector('.btns__btn-prev').onclick = prevSlide

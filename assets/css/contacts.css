@@ -33,25 +33,19 @@ li {
 }
 .header__item {
   font-family: Protest Strike;
+  display: flex;
 }
 @media (max-width: 426px) {
-  .header__title {
+  .header__item {
     display: none;
   }
 }
-@media (max-width: 426px) {
-  .header__item3 {
-    display: none;
-  }
+.header__burgerbtn {
+  display: none;
 }
 @media (max-width: 426px) {
-  .header__item4 {
-    display: none;
-  }
-}
-@media (max-width: 426px) {
-  .header__item5 {
-    display: none;
+  .header__burgerbtn {
+    display: block;
   }
 }
 @media (max-width: 426px) {
@@ -84,9 +78,9 @@ li {
   color: white;
   font-family: Protest Strike;
   position: absolute;
-  top: 33px;
-  left: 150px;
   z-index: 12388750;
+  top: 30px;
+  left: 30px;
 }
 .header__burger-cont {
   text-align: center;
@@ -120,7 +114,7 @@ li {
 @media (max-width: 426px) {
   .header__burgerbtn {
     position: absolute;
-    display: none;
+    display: block;
   }
 }
 .header__burgerbtn img {
@@ -168,15 +162,15 @@ li {
   font-size: 32px;
   font-weight: 900;
   background-color: rgba(63, 63, 63, 0.1215686275);
-  border-radius: 50px;
+  border-radius: 30px;
 }
 .main__text p {
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 @media (max-width: 426px) {
   .main__text {
     font-size: 12px;
-    top: 120px;
+    top: 140px;
     margin-left: 10px;
   }
 }
@@ -209,12 +203,18 @@ li {
   display: none;
   transition: transform 4s;
   position: fixed;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
-  background: rgba(16, 167, 255, 0.6);
+  background: #B2E0EA;
+  width: 1920px;
+  height: 1080px;
   z-index: 100;
+}
+@media (max-width: 426px) {
+  .contacts {
+    width: 420px;
+    height: 300px;
+  }
 }
 .contacts input {
   outline: 0;
@@ -225,21 +225,21 @@ li {
   padding: 10px;
 }
 .contacts__container {
+  position: relative;
   border-radius: 50px;
-  position: absolute;
   z-index: 2;
   width: 1100px;
   height: 600px;
+  bottom: 0px;
   background-color: rgba(191, 191, 191, 0.6);
-  left: 400px;
-  bottom: 200px;
 }
 @media (max-width: 426px) {
   .contacts__container {
+    border-radius: 30px;
     width: 300px;
-    height: 450px;
+    height: 200px;
     left: 50px;
-    bottom: 90px;
+    bottom: 40px;
   }
 }
 .contacts__title {
@@ -251,12 +251,17 @@ li {
 }
 @media (max-width: 426px) {
   .contacts__title {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .contacts__form {
   padding-top: 20px;
   padding-left: 45px;
+}
+@media (max-width: 426px) {
+  .contacts__form {
+    padding-left: 5px;
+  }
 }
 .contacts__form input {
   display: block;
@@ -272,7 +277,7 @@ li {
   .contacts__form input {
     font-size: 12px;
     padding-left: 10px;
-    height: 20px;
+    height: 15px;
     margin-top: 5px;
   }
 }
@@ -286,6 +291,12 @@ li {
     font-size: 12px;
   }
 }
+@media (max-width: 426px) {
+  .contacts__comment label {
+    position: relative;
+    bottom: 80px;
+  }
+}
 .contacts__comment textarea {
   width: 600px;
   height: 200px;
@@ -296,10 +307,12 @@ li {
 }
 @media (max-width: 426px) {
   .contacts__comment textarea {
-    width: 200px;
-    height: 20px;
-    font-size: 16px;
-    margin-top: 10px;
+    padding-bottom: 0;
+    width: 90px;
+    height: 80px;
+    font-size: 12px;
+    position: relative;
+    bottom: 70px;
   }
 }
 .contacts textarea {
@@ -322,7 +335,8 @@ li {
 }
 @media (max-width: 426px) {
   .contacts__email-comment {
-    display: block;
+    margin-top: 10px;
+    display: flex;
     gap: 30px;
   }
 }
@@ -330,7 +344,20 @@ li {
   margin-top: 50px;
   margin-left: 400px;
 }
+@media (max-width: 426px) {
+  .contacts__submit {
+    position: relative;
+    bottom: 112px;
+    margin-left: 194px;
+  }
+}
 .contacts__submit input {
   width: 200px;
   padding-right: 30px;
+}
+@media (max-width: 426px) {
+  .contacts__submit input {
+    width: 75px;
+    padding-right: 15px;
+  }
 }

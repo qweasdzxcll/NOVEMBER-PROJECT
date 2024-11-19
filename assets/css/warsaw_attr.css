@@ -354,6 +354,9 @@ li {
   width: 148px;
   height: 100%;
 }
+.main__item26 {
+  border-color: #D4A672;
+}
 .main__text3 {
   background-color: #CBC8AA;
   text-align: center;
@@ -502,6 +505,9 @@ li {
     position: relative;
     bottom: 1150px;
   }
+}
+.main__item17 {
+  border-color: #FA6C6C;
 }
 .main__title4 {
   position: relative;

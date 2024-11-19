@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__container {
+  max-width: 130vh;
+  width: 100%;
+  height: 115vh;
+  margin: auto;
+  background-color: #e6e6e6;
+  border-radius: 30px;
+}
+.main .header__container {
+  margin: 10px 30px 50px 30px;
+}
+.main .header__container input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  height: 30px;
+}
+.main .header__container button {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 20px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(107, 107, 107);
+}
+.main .header__search {
+  padding-top: 8px;
+  float: right;
+}
+.main .header__elems {
+  padding-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+.main .header__item {
+  font-family: Protest Strike;
+  font-size: 30px;
+}
+.main .header__title {
+  color: rgba(107, 107, 107, 0.356);
+}
+.main__row {
+  display: flex;
+  margin: 20px 55px;
+  gap: 6vh;
+}
+.main__img {
+  max-width: 25vh;
+  width: 100%;
+  height: 16vh;
+}
+.main__img :hover {
+  transform: scale(0.9);
+}
+.main__img img {
+  max-width: 25vh;
+  width: 100%;
+  height: 16vh;
+}
+.main__subtitle {
+  font-family: Protest Strike;
+  margin-bottom: 2px;
+}
+.main__title {
+  font-family: Protest Strike;
+  margin-left: 5vh;
+  font-size: 35px;
+}
+.main__card {
+  cursor: pointer;
+}
+
+.notactive {
+  display: none;
+}

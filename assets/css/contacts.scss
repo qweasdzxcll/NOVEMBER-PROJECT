@@ -29,25 +29,15 @@ li {
     }
     &__item {
         font-family: Protest Strike;
-    }
-    &__title {
-        @media (max-width: 426px) {
-            display: none;
-        }    
-    }
-    &__item3 {
+        display: flex;
         @media (max-width: 426px) {
             display: none;
         }
     }
-    &__item4 {
-        @media (max-width: 426px) {
-            display: none;
-        }
-    }
-    &__item5 {
-        @media (max-width: 426px) {
-            display: none;
+    &__burgerbtn {
+        display: none;
+        @media(max-width: 426px) {
+            display: block;
         }
     }
     &__contact {
@@ -80,14 +70,16 @@ li {
         color: white;
         font-family: Protest Strike;
         position: absolute;
-        top: 33px;
-        left: 150px;
         z-index: 12388750;
+        // margin-left: 1450px;
+        top: 30px;
+        left: 30px;
     }
     &__burger-cont {
         text-align: center;
         align-items: center;
         font-size: 24px;
+        // display: none;
         width: 250px;
         height: 370px;
     }
@@ -116,7 +108,7 @@ li {
         display: none;
         @media (max-width: 426px) {
             position: absolute;
-            display: none;
+            display: block;
         }
         img {
             position: relative;
@@ -161,13 +153,13 @@ li {
         font-size: 32px;
         font-weight: 900;
         background-color: #3f3f3f1f;
-        border-radius: 50px;
+        border-radius: 30px;
         p {
-            padding: 20px 30px;
+            padding: 10px 30px;
         }
         @media (max-width: 426px) {
             font-size: 12px;
-            top: 120px;
+            top: 140px;
             margin-left: 10px;
         }
     }
@@ -198,12 +190,16 @@ li {
     display: none;
     transition: transform 4s;
     position:fixed;
-    width:100%;
-    height:100%;
     justify-content:center;
     align-items:center;
-    background:rgba(16, 167, 255, 0.6);
+    background: #B2E0EA;
+    width: 1920px;
+    height: 1080px;
     z-index:100;
+    @media (max-width: 426px) {
+        width: 420px;
+        height: 300px;
+    }
     input {
         outline: 0;
     }
@@ -213,19 +209,19 @@ li {
         padding: 10px;
     }
     &__container {
+        position: relative;
         border-radius: 50px;
-        position: absolute;
         z-index: 2;
         width: 1100px;
         height: 600px;
+        bottom: 0px;
         background-color: rgba(191, 191, 191, 0.6);
-        left: 400px;
-        bottom: 200px;
         @media (max-width: 426px) {
+            border-radius: 30px;
             width: 300px;
-            height: 450px;
+            height: 200px;
             left: 50px;
-            bottom: 90px;
+            bottom: 40px;
         }
     }
     &__title {
@@ -235,12 +231,15 @@ li {
         font-weight: 900;
         color: white;
         @media (max-width: 426px) {
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     &__form {
         padding-top: 20px;
         padding-left: 45px;
+        @media (max-width: 426px) {
+            padding-left: 5px;
+        }
         input {
             display: block;
             margin-top: 20px;
@@ -253,7 +252,7 @@ li {
             @media (max-width: 426px) {
                 font-size: 12px;
                 padding-left: 10px;
-                height: 20px;
+                height: 15px;
                 margin-top: 5px;
             }
         }
@@ -267,6 +266,12 @@ li {
         }
     }
     &__comment {
+        label {
+            @media (max-width: 426px) {
+                position: relative;
+                bottom: 80px;
+            }
+        }
         textarea {
             width: 600px;
             height: 200px;
@@ -275,10 +280,12 @@ li {
             font-size: 24px;
             background-color: #ffffffb4;
             @media (max-width: 426px) {
-                width: 200px;
-                height: 20px;
-                font-size: 16px;
-                margin-top: 10px;
+                padding-bottom: 0;
+                width: 90px;
+                height: 80px;
+                font-size: 12px;
+                position: relative;
+                bottom: 70px;
             }
         }
     }
@@ -298,16 +305,26 @@ li {
         margin-top: 40px;
         display: flex;
         @media (max-width: 426px) {
-            display: block;
+            margin-top: 10px;
+            display: flex;
             gap: 30px;
         }
     }
     &__submit { 
         margin-top: 50px;
         margin-left: 400px;
+        @media (max-width: 426px) {
+            position: relative;
+            bottom: 112px;
+            margin-left: 194px;
+        }
         input {
             width: 200px;
             padding-right: 30px;
+            @media (max-width: 426px) {
+                width: 75px;
+                padding-right: 15px;
+            }
         }
     }
 }
