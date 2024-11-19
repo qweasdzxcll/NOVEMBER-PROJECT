@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  position: absolute;
+}
+.header__container {
+  margin: 10px 20px;
+  display: flex;
+}
+.header__item-2 {
+  width: 250px;
+  color: rgba(255, 255, 255, 0.288);
+}
+@media (max-width: 426px) {
+  .header__item-2 {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.header__item {
+  font-family: Protest Strike;
+}
+@media (max-width: 426px) {
+  .header__title {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header__item3 {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header__item4 {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header__item5 {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header__contact {
+    display: none;
+  }
+}
+.header__logo {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.header__logo img {
+  width: 45px;
+  height: 45px;
+}
+.header__cont {
+  color: rgba(255, 255, 255, 0.288);
+}
+.header__elems {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  gap: 150px;
+}
+.header__burger {
+  display: none;
+  background-color: rgba(128, 128, 128, 0.719);
+  border-radius: 30px;
+  color: white;
+  font-family: Protest Strike;
+  position: absolute;
+  top: 33px;
+  left: 150px;
+  z-index: 12388750;
+}
+.header__burger-cont {
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  width: 250px;
+  height: 370px;
+}
+.header__burger-item {
+  padding-top: 20px;
+}
+.header__burger-form input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  outline: 0;
+  width: 150px;
+}
+.header__burger-close {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.header__burger-close img {
+  width: 25px;
+  height: 25px;
+}
+.header__burgerbtn {
+  display: none;
+}
+@media (max-width: 426px) {
+  .header__burgerbtn {
+    position: absolute;
+    display: none;
+  }
+}
+.header__burgerbtn img {
+  position: relative;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.main__img {
+  width: 1900px;
+  height: 960px;
+}
+@media (max-width: 426px) {
+  .main__img {
+    width: 425px;
+    height: 300px;
+  }
+}
+.main__img img {
+  width: 100%;
+  height: 100%;
+}
+.main__title {
+  position: absolute;
+  top: 100px;
+  left: 550px;
+  font-family: Protest Strike;
+  color: white;
+  font-size: 100px;
+  text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
+}
+@media (max-width: 426px) {
+  .main__title {
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+  }
+}
+.main__text {
+  position: absolute;
+  top: 400px;
+  margin-left: 50px;
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: rgba(63, 63, 63, 0.1215686275);
+  border-radius: 50px;
+}
+.main__text p {
+  padding: 20px 30px;
+}
+@media (max-width: 426px) {
+  .main__text {
+    font-size: 12px;
+    top: 120px;
+    margin-left: 10px;
+  }
+}
+.main__btn {
+  background-color: rgba(63, 63, 63, 0.1215686275);
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  top: 670px;
+  margin-left: 70px;
+  border-radius: 50px;
+  font-size: 28px;
+  width: 450px;
+  z-index: 10;
+  font-family: Protest Strike;
+  cursor: pointer;
+}
+@media (max-width: 426px) {
+  .main__btn {
+    font-size: 12px;
+    top: 250px;
+    margin-left: 10px;
+    width: 200px;
+  }
+}
+.main__btn h2 {
+  padding: 10px 25px;
+}
+
+.contacts {
+  display: none;
+  transition: transform 4s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(16, 167, 255, 0.6);
+  z-index: 100;
+}
+.contacts input {
+  outline: 0;
+}
+.contacts textarea {
+  border: none;
+  outline: 0;
+  padding: 10px;
+}
+.contacts__container {
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  width: 1100px;
+  height: 600px;
+  background-color: rgba(191, 191, 191, 0.6);
+  left: 400px;
+  bottom: 200px;
+}
+@media (max-width: 426px) {
+  .contacts__container {
+    width: 300px;
+    height: 450px;
+    left: 50px;
+    bottom: 90px;
+  }
+}
+.contacts__title {
+  padding-left: 20px;
+  font-family: Protest Strike;
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+@media (max-width: 426px) {
+  .contacts__title {
+    font-size: 20px;
+  }
+}
+.contacts__form {
+  padding-top: 20px;
+  padding-left: 45px;
+}
+.contacts__form input {
+  display: block;
+  margin-top: 20px;
+  font-size: 24px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7058823529);
+  border-radius: 50px;
+  padding-left: 20px;
+  border: none;
+}
+@media (max-width: 426px) {
+  .contacts__form input {
+    font-size: 12px;
+    padding-left: 10px;
+    height: 20px;
+    margin-top: 5px;
+  }
+}
+.contacts__form label {
+  font-size: 32px;
+  font-family: Protest Strike;
+  color: white;
+}
+@media (max-width: 426px) {
+  .contacts__form label {
+    font-size: 12px;
+  }
+}
+.contacts__comment textarea {
+  width: 600px;
+  height: 200px;
+  border-radius: 0;
+  padding-bottom: 170px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.7058823529);
+}
+@media (max-width: 426px) {
+  .contacts__comment textarea {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+.contacts textarea {
+  resize: none;
+}
+.contacts__name-lastname {
+  gap: 100px;
+  display: flex;
+}
+@media (max-width: 426px) {
+  .contacts__name-lastname {
+    display: block;
+    gap: 30px;
+  }
+}
+.contacts__email-comment {
+  gap: 100px;
+  margin-top: 40px;
+  display: flex;
+}
+@media (max-width: 426px) {
+  .contacts__email-comment {
+    display: block;
+    gap: 30px;
+  }
+}
+.contacts__submit {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+.contacts__submit input {
+  width: 200px;
+  padding-right: 30px;
+}

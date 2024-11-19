@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.main__container {
+  width: 1920px;
+  height: 952px;
+  overflow: hidden;
+}
+.main__line {
+  transition: all 1s;
+  width: 5760px;
+  height: 952px;
+  display: flex;
+  position: relative;
+}
+.main__img {
+  position: relative;
+  z-index: 0;
+  width: 1920px;
+  height: 952px;
+}
+.main__img img {
+  width: 1920px;
+  height: 100%;
+}
+.main__title {
+  z-index: 1;
+  font-family: Protest Strike;
+  position: absolute;
+  bottom: 520px;
+  color: white;
+  width: 750px;
+  font-size: 150px;
+  text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
+  font-weight: 900;
+}
+.main__title-rio {
+  font-size: 130px;
+  width: 1920px;
+  bottom: 540px;
+  left: 180px;
+}
+.main__title-venezia {
+  margin-left: 500px;
+}
+.main__seemore {
+  z-index: 1;
+  position: absolute;
+  font-size: 48px;
+  bottom: 460px;
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 50px;
+}
+.main__seemore a {
+  padding: 15px 25px;
+  width: 450px;
+}
+.main__title-warsaw {
+  margin-left: 500px;
+}
+.main__seemore-rio {
+  left: 760px;
+}
+.main__seemore-venezia {
+  margin-left: 750px;
+  width: 355px;
+}
+.main__seemore-venezia a {
+  padding: 15px 25px;
+  width: 355px;
+}
+.main__seemore-warsaw {
+  margin-left: 750px;
+  width: 355px;
+}
+.main__seemore-warsaw a {
+  padding: 15px 25px;
+  width: 355px;
+}
+
+.btns__btn {
+  cursor: pointer;
+}
+.btns__btn img {
+  width: 60px;
+  height: 60px;
+}
+.btns__btn-prev {
+  position: absolute;
+  bottom: 400px;
+  left: 10px;
+}
+.btns__btn-next {
+  position: absolute;
+  bottom: 400px;
+  left: 1830px;
+}
