@@ -30,9 +30,10 @@ body {
     .header {
         &__container {
             margin: 10px 30px 30px 30px;
-            @media (max-width: 426px) {
-                display: none;
-            }
+        }
+        &__search {
+            padding-top: 8px;
+            float: right;
             input {
                 border: none;
                 border-radius: 10px;
@@ -40,6 +41,11 @@ body {
                 padding: 5px;
                 height: 30px;
                 border: 3px solid black;
+                @media (max-width: 426px) {
+                    height: 20px;
+                    font-size: 10px;
+                    width: 13vh;
+                }
             }
             button {
                 border: none;
@@ -52,21 +58,31 @@ body {
                 background-color: white;
                 color: rgb(107, 107, 107);
                 border: 3px solid black;
+                @media (max-width: 426px) {
+                    position: relative;
+                    top: 0.5vh;
+                    height: 20px;
+                    font-size: 10px;
+                    width: 10vh;
+                }
             }
-        }
-        &__search {
-            padding-top: 8px;
-            float: right;
 
         }
         &__elems {
             padding-top: 30px;
             display: flex;
             gap: 30px;
+            @media (max-width: 426px) {
+                padding-top: 5px;
+                flex-wrap: wrap;
+            }
         }
         &__item {
             font-family: Protest Strike;
             font-size: 24px;
+            @media (max-width: 426px) {
+                font-size: 16px;
+            }
         }
         &__title {
             color: rgba(107, 107, 107, 0.356)
@@ -77,10 +93,13 @@ body {
             font-family: Protest Strike;
             label {
                 margin-top: 5px;
+                @media (max-width: 426px) {
+                    font-size: 16px;
+                }
             }
             input {
                 position: relative;
-                right: 8px;
+                right: 3px;
             }
         }
         &__row {
@@ -107,16 +126,29 @@ body {
     &__subtitle {
         font-family: Protest Strike;
         margin-bottom: 2px;
+        @media (max-width: 426px) {
+            font-size: 12px;
+        }
     }
     &__card {
         cursor: pointer;
     }
     &__pagination {
         display: flex;
-        margin-left: 57vh;
+        margin-left: 58vh;
         margin-top: 3vh;
         gap: 20px;
         font-size: 30px;
+        @media (max-width: 426px) {
+            margin-left: 23vh;
+        }
+        @media (max-width: 376px) {
+            margin-left: 20vh;
+        }
+        @media (max-width: 321px) {
+            margin-left: 14vh;
+
+        }
         img {
             width: 30px;
             height: 30px;
@@ -127,17 +159,25 @@ body {
     }
     #cards {
         margin-top: 8vh;
-        margin-left: 80px;
+        margin-left: 8vh;
         gap: 40px;
         display: flex;
         max-width: 180vh; 
         flex-wrap: wrap; 
-    }
-    #cards2 {
-        margin-left: 80px;
-        gap: 40px;
-        display: none;
-        max-width: 180vh; 
-        flex-wrap: wrap; 
+        @media (max-width: 426px) {
+            margin-left: 5vh;
+            padding-top: 1vh;
+            gap: 35px;
+        }
+        @media (max-width: 376px) {
+            margin-left: 2vh;
+            padding-top: 1vh;
+            gap: 20px;
+        }
+        @media (max-width: 321px) {
+            margin-left: 11vh;
+            padding-top: 1vh;
+            gap: 20px;
+        }
     }
 }

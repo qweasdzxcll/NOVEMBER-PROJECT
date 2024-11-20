@@ -19,7 +19,7 @@ const search = async () => {
     let response = await fetch(url)
         .then(data => data.json())
     response.forEach(element => {
-        if (input.value == element['title']) {
+        if (input.value.toLowerCase() === element['title'].toLowerCase()) {
             localStorage.setItem('data', JSON.stringify(element))
             window.location.href = 'search_attr.html'
         }
@@ -32,9 +32,8 @@ const render = async () => {
     let response = await fetch(url)
         .then(data => data.json())
     cards.innerHTML = ''
-    let id = 0
     response.forEach(element => {
-        if (element['id'] < 12) {
+        if (element['id'] < pags) {
             cards.innerHTML += `
                 <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
                     <div class="main__subtitle" id="subtitle${element['id']}">
@@ -45,7 +44,6 @@ const render = async () => {
                     </div>
                 </div>
                 `
-            id++
         }
     })
 }
@@ -55,7 +53,6 @@ const filtration = async (item) => {
     let response = await fetch(url)
         .then(data => data.json())
     cards.innerHTML = ''
-    let id = 0
     response.forEach(element => {
         if (element['title'].includes(item)) {
             cards.innerHTML += `
@@ -63,28 +60,57 @@ const filtration = async (item) => {
                     <div class="main__subtitle" id="subtitle${element['id']}">
                         <p>${element['title']}</p>
                     </div>
-                    <div class="main__img main__img${id}">
+                    <div class="main__img main__img${element['id']}">
                         <img src="${element['img3']}" alt="" id="img${element['id']}">
                     </div>
                 </div>
                 `
-            id++
+        } else if (element['city'].includes(item)) {
+            cards.innerHTML += `
+            <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
+                <div class="main__subtitle" id="subtitle${element['id']}">
+                    <p>${element['title']}</p>
+                </div>
+                <div class="main__img main__img${element['id']}">
+                    <img src="${element['img3']}" alt="" id="img${element['id']}">
+                </div>
+            </div>
+            `
         }
     })
 }
 
 
 
-render()
-let pag = 0  
-let count = 12                                                        
+let pags = 12                                       
 const next = async() => {  
     let response = await fetch(url)
-    .then(data => data.json())
+        .then(data => data.json())
     cards.innerHTML = ''
     response.forEach(element => {
-        if (element['id'] < count) {
-            cards.innerHTML = `
+        if(element['id'] >= pags && element['id'] < pags*2) {
+            cards.innerHTML += `
+                <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
+                    <div class="main__subtitle" id="subtitle${element['id']}">
+                        <p>${element['title']}</p>
+                    </div>
+                    <div class="main__img main__img${element['id']}">
+                        <img src="${element['img3']}" alt="" id="img${element['id']}">
+                    </div>
+                </div>
+               `
+        }
+    })
+}
+
+
+const prev = async() => {  
+    let response = await fetch(url)
+        .then(data => data.json())
+    cards.innerHTML = ''
+    response.forEach(element => {
+        if (element['id'] < pags) {
+            cards.innerHTML += `
                 <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
                     <div class="main__subtitle" id="subtitle${element['id']}">
                         <p>${element['title']}</p>
@@ -95,26 +121,6 @@ const next = async() => {
                 </div>
                 `
         }
-        count++
     });
 }
-                                                         
-const prev = async() => {  
-    let response = await fetch(url)
-    .then(data => data.json())
-    cards.innerHTML = ''
-    response.forEach(element => {
-        if (element['id'] > count)
-        cards.innerHTML = `
-            <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
-                <div class="main__subtitle" id="subtitle${element['id']}">
-                    <p>${element['title']}</p>
-                </div>
-                <div class="main__img main__img${element['id']}">
-                    <img src="${element['img3']}" alt="" id="img${element['id']}">
-                </div>
-            </div>
-            `
-        count--
-    });
-}
+render()

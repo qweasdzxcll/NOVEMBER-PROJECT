@@ -29,12 +29,11 @@ body {
 .main .header__container {
   margin: 10px 30px 30px 30px;
 }
-@media (max-width: 426px) {
-  .main .header__container {
-    display: none;
-  }
+.main .header__search {
+  padding-top: 8px;
+  float: right;
 }
-.main .header__container input {
+.main .header__search input {
   border: none;
   border-radius: 10px;
   outline: none;
@@ -42,7 +41,14 @@ body {
   height: 30px;
   border: 3px solid black;
 }
-.main .header__container button {
+@media (max-width: 426px) {
+  .main .header__search input {
+    height: 20px;
+    font-size: 10px;
+    width: 13vh;
+  }
+}
+.main .header__search button {
   border: none;
   padding: 5px;
   border-radius: 10px;
@@ -54,18 +60,34 @@ body {
   color: rgb(107, 107, 107);
   border: 3px solid black;
 }
-.main .header__search {
-  padding-top: 8px;
-  float: right;
+@media (max-width: 426px) {
+  .main .header__search button {
+    position: relative;
+    top: 0.5vh;
+    height: 20px;
+    font-size: 10px;
+    width: 10vh;
+  }
 }
 .main .header__elems {
   padding-top: 30px;
   display: flex;
   gap: 30px;
 }
+@media (max-width: 426px) {
+  .main .header__elems {
+    padding-top: 5px;
+    flex-wrap: wrap;
+  }
+}
 .main .header__item {
   font-family: Protest Strike;
   font-size: 24px;
+}
+@media (max-width: 426px) {
+  .main .header__item {
+    font-size: 16px;
+  }
 }
 .main .header__title {
   color: rgba(107, 107, 107, 0.356);
@@ -78,9 +100,14 @@ body {
 .main .header__filters label {
   margin-top: 5px;
 }
+@media (max-width: 426px) {
+  .main .header__filters label {
+    font-size: 16px;
+  }
+}
 .main .header__filters input {
   position: relative;
-  right: 8px;
+  right: 3px;
 }
 .main .header__row {
   display: flex;
@@ -106,15 +133,35 @@ body {
   font-family: Protest Strike;
   margin-bottom: 2px;
 }
+@media (max-width: 426px) {
+  .main__subtitle {
+    font-size: 12px;
+  }
+}
 .main__card {
   cursor: pointer;
 }
 .main__pagination {
   display: flex;
-  margin-left: 57vh;
+  margin-left: 58vh;
   margin-top: 3vh;
   gap: 20px;
   font-size: 30px;
+}
+@media (max-width: 426px) {
+  .main__pagination {
+    margin-left: 23vh;
+  }
+}
+@media (max-width: 376px) {
+  .main__pagination {
+    margin-left: 20vh;
+  }
+}
+@media (max-width: 321px) {
+  .main__pagination {
+    margin-left: 14vh;
+  }
 }
 .main__pagination img {
   width: 30px;
@@ -125,16 +172,30 @@ body {
 }
 .main #cards {
   margin-top: 8vh;
-  margin-left: 80px;
+  margin-left: 8vh;
   gap: 40px;
   display: flex;
   max-width: 180vh;
   flex-wrap: wrap;
 }
-.main #cards2 {
-  margin-left: 80px;
-  gap: 40px;
-  display: none;
-  max-width: 180vh;
-  flex-wrap: wrap;
+@media (max-width: 426px) {
+  .main #cards {
+    margin-left: 5vh;
+    padding-top: 1vh;
+    gap: 35px;
+  }
+}
+@media (max-width: 376px) {
+  .main #cards {
+    margin-left: 2vh;
+    padding-top: 1vh;
+    gap: 20px;
+  }
+}
+@media (max-width: 321px) {
+  .main #cards {
+    margin-left: 11vh;
+    padding-top: 1vh;
+    gap: 20px;
+  }
 }

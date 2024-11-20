@@ -31,6 +31,18 @@ li {
         width: 90vh;
         min-height: 110vh;
         text-align: center;
+        @media (max-width: 426px) {
+            width: 63vh;
+            margin: 10px;
+        }
+        @media (max-width: 376px) {
+            width: 55vh;
+            margin: 10px 0 10px 10px;
+        }
+        @media (max-width: 321px) {
+            width: 47vh;
+            margin: 10px 0 10px 10px;
+        }
     }
     &__elems {
         display: flex;
@@ -50,6 +62,13 @@ li {
         color: black;
         text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
         margin-left: 20vh;
+        @media (max-width: 426px) {
+            margin-left: 2vh;
+            margin-top: 1vh;
+        }
+        @media (max-width: 376px) {
+            font-size: 24px;
+        }
     }
     &__img {
         img {
@@ -61,12 +80,24 @@ li {
         img {
             width: 35vh;
             height: 20vh;
+            @media (max-width: 426px) {
+                width: 33vh;
+                height: 17vh;
+            }
+            @media (max-width: 321px) {
+                width: 27vh;
+                height: 17vh;
+            }
         }
     }
     &__img-v {
         img {
             width: 17vh;
             height: 20vh;
+            @media (max-width: 426px) {
+                width: 14vh;
+                height: 17vh;
+            }
         }
     }
     &__row {
@@ -74,6 +105,18 @@ li {
         display: flex;
         gap: 60px;
         margin-left: 13vh;
+        @media(max-width: 426px) {
+            margin-left: 4vh;
+            gap: 35px;
+        }
+        @media (max-width: 376px) {
+            margin-left: 1.5vh;
+            gap: 30px;
+        }
+        @media (max-width: 321px) {
+            margin-left: 1.1vh;
+            gap: 25px;
+        }
     }
     &__row1 {
         margin-top: 2vh;
@@ -87,8 +130,23 @@ li {
         max-width: 650px;
         margin-left: 9vh;
         font-size: 24px;
+        @media (max-width: 426px) {
+            width: 380px;
+            margin-left: 2vh;
+            font-size: 20px;
+        }
+        @media (max-width: 376px) {
+            width: 340px;
+            margin-left: 1.5vh;
+            font-size: 20px;
+        }
+        @media (max-width: 321px) {
+            width: 285px;
+            margin-left: 1.5vh;
+            font-size: 18px;
+        }
         p {
-            width: 100%;;
+            width: 100%;
         }
     }
     &__map {
@@ -98,10 +156,17 @@ li {
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
             @media (max-width: 426px) {
-                max-width: 425px;
-                width: 100%;
-            }   
+                width: 410px;
+                height: 420px;
+            }
+            @media (max-width: 376px) {
+                width: 357px;
+                height: 420px;
+            }
+            @media (max-width: 321px) {
+                width: 305px;
+                height: 420px;
+            }
         }
     }
-
 }
